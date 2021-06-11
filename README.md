@@ -1,44 +1,41 @@
-### 天猫 - 说明文档
+### Tmall - Documentation
 
-+ 项目使用了后端数据，线上访问数据交互功能失效，请看视频效果
++ The project uses the back-end data, the online access data interaction function is invalid, please see the video effect
 
-+ 1. 轮播图： 透明度轮播，鼠标移入，停止轮播，显示翻页按钮，鼠标移出，开始轮播，隐藏翻页按钮，可点击左右按钮切换并放大图片；
-    2. 楼层导航： 在一定高度范围内，显示/隐藏导航，会根据当前内容，切换导航，点击导航，滚动到对应内容，刷新首页，导航会对应内容
-    3. 商品： Ajax请求数据库
-    4. 登陆状态： 判断是否登录，再请求数据库，加载购物车商品
++ 1.Carousel chart: transparency carousel, mouse in, stop carousel, display page turning button, mouse out, start carousel, hide page turning button, click left and        right buttons to switch and enlarge the picture;
+    2. Floor navigation: within a certain height range, display / hide the navigation, switch the navigation according to the current content, click navigation,            scroll to the corresponding content, refresh the home page, and the navigation will display the corresponding content
+    3. Product: Ajax request database
+    4. Login status: judge whether to login, and then request the database to load the shopping cart products
 
-+ 首页
++ home page
 
-  1. 登录：判断是否登录，未登录跳转回登录页面，登录成功后返回此页，并显示用户名
-  2. 商品列表：随机推荐不同商品，点购物车按钮进入商品详情
+  1. Login: judge whether to log in or not. If not, jump back to the login page. After successful login, return to this page and display the user name
+  2. Product list: randomly recommend different products, click the shopping cart button to enter the product details
 
-+ 登录注册页
++ Login registration page
 
-  1. 登录：账号密码错误时，提示错误，正确会跳转首页；
-  2. 注册：输入用户名和密码注册成功后会跳转到登录页面
+  1. Login: when the account password is wrong, you will be prompted that it is wrong. If it is correct, you will jump to the home page;
+  2. Registration: enter the user name and password. After successful registration, you will jump to the login page
 
-+ 列表页
++ List page
 
-  1. 页面商品显示：通过ajax请求数据库商品信息
-  2. 每页显示10条数据：根据分页器来对获取的信息进行分页显示
-  3. 列表上方有综合、人气、新品、等选项，点击可根据不同排序打开商品
-  4. 列表上方品牌logo，点击可筛选出当前品牌商品
+  1. Page commodity display: request database commodity information through Ajax
+  2. Each page displays 10 pieces of data: according to the pager, the information obtained is displayed in pages
+  3. At the top of the list are comprehensive, popular, new products, and other options. Click to open the products according to different sorting
+  4. Brand logo at the top of the list, click to select the current brand products
 
-+ 详情页
++ Details page
 
-  1. 点击下方小图片可切换浏览
-  2. 使用放大镜给当前商品图片进行放大
-  3. 确定购买规格和数量
+  1. Click the small picture below to switch browsing
+  2. Use a magnifying glass to enlarge the picture of the current product
+  3. Determine purchase specifications and quantities
 
-+ 购物车
++ Shopping Cart
 
-  1. 数量加减： 功能等同详情页加减，实时发送Ajax请求，改变数据库；
-
-  2. 删除： 可删除单个商品，也可删除选中商品，删除后刷新；
-
-  3. 选中状态值：根据选中商品实时改变；
-
-  4. 购物车商品为空时，点击快去选购吧可重新进入列表页选择自己心仪等商品
+  1. Quantity addition and subtraction: the function is equivalent to the addition and subtraction of detail page, sending Ajax request in real time, changing the          database;
+  2. Delete: you can delete a single commodity or a selected commodity, and refresh after deleting;
+  3. Selected status value: changes in real time according to the selected goods;
+  4. When the shopping cart item is empty, click to buy it quickly, and then re-enter the list page to select your favorite items
 
      
 
